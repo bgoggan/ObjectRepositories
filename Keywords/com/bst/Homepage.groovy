@@ -30,78 +30,68 @@ import org.openqa.selenium.support.FindBy
 import org.openqa.selenium.support.ui.Select
 
 public class Homepage {
-	
+
 	public Homepage (WebDriver driver) {
-		super(driver)
+		driver
 	}
-	
-	@FindBy(xpath = "//input[@value='BST Global']")
-	private WebElement BstGlobalCheckbox
-	
+
+	private WebElement BstGlobalCheckbox = driver.findElement(By.xpath("//input[@value='BST Global']"))
+
 	public WebElement getBstGlobalCheckbox() {
-		return BstGlobalCheckbox;
+		return BstGlobalCheckbox
 	}
-	
-	@FindBy(xpath = "(//input[@data-field-id='field13'])[2]")
-	private WebElement BstGlobalPartnerCheckbox
-	
+
+	private WebElement BstGlobalPartnerCheckbox = driver.findElement(By.xpath("(//input[@data-field-id='field13'])[2]"))
+
 	public WebElement getBstGlobalPartnerCheckbox() {
-		return BstGlobalPartnerCheckbox;
+		return BstGlobalPartnerCheckbox
 	}
-	
-	@FindBy(xpath = "//input[@placeholder='Company']")
-	private WebElement Company
-	
+
+	private WebElement Company = driver.findElement(By.xpath("//input[@placeholder='Company']"))
+
 	public WebElement getCompany() {
-		return Company;
+		return Company
 	}
-	
-	@FindBy(xpath = "//span[contains(text(), 'Contact')]")
-	private WebElement ContactMenu
-	
+
+	private WebElement ContactMenu = driver.findElement(By.xpath("//span[contains(text(), 'Contact')]"))
+
 	public WebElement getContactMenu() {
-		return ContactMenu;
+		return ContactMenu
 	}
-	
-	@FindBy(xpath = "//input[@placeholder='Email']")
-	private WebElement Email
-	
+
+	private WebElement Email = driver.findElement(By.xpath("//input[@placeholder='Email']"))
+
 	public WebElement getEmail() {
-		return Email;
+		return Email
 	}
-	
-	@FindBy(xpath = "//input[@placeholder='First Name']")
-	private WebElement FirstName
-	
+
+	private WebElement FirstName = driver.findElement(By.xpath("//input[@placeholder='First Name']"))
+
 	public WebElement getFirstName() {
-		return FirstName;
+		return FirstName
 	}
-	
-	@FindBy(xpath = "//input[@placeholder='Job Title']")
-	private WebElement JobTitle
-	
+
+	private WebElement JobTitle = driver.findElement(By.xpath("//input[@placeholder='Job Title']"))
+
 	public WebElement getJobTitle() {
-		return JobTitle;
+		return JobTitle
 	}
-	
-	@FindBy(xpath = "//input[@placeholder='Last Name']")
-	private WebElement LastName
-	
+
+	private WebElement LastName = driver.findElement(By.xpath("//input[@placeholder='Last Name']"))
+
 	public WebElement getLastName() {
-		return LastName;
+		return LastName
 	}
-	
-	@FindBy(xpath = "//a[contains(text(),'Support')]")
-	private WebElement LoginSupportLink
-	
+
+	private WebElement LoginSupportLink = driver.findElement(By.xpath("//a[contains(text(),'Support')]"))
+
 	public WebElement getLoginSupportLink() {
-		return LoginSupportLink;
+		return LoginSupportLink
 	}
-	
-	@FindBy(xpath = "//textarea[@placeholder='Message']")
-	private WebElement MessageBox
-	
+
+	private WebElement MessageBox = driver.findElement(By.xpath("//textarea[@placeholder='Message']"))
+
 	public WebElement getMessageBox() {
-		return MessageBox;
+		return MessageBox
 	}
 }

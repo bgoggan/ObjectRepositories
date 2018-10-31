@@ -30,36 +30,32 @@ import org.openqa.selenium.support.FindBy
 import org.openqa.selenium.support.ui.Select
 
 public class BstLoginPage {
-	
+
 	public BstLoginPage (WebDriver driver) {
-		super(driver)
+		driver
 	}
-	
-	@FindBy(xpath = "//input[@id='txtUsername']")
-	private WebElement Username
-	
+
+	private WebElement Username = driver.findElement(By.xpath("//input[@id='txtUsername']"))
+
 	public WebElement getUsername() {
-		return Username;
+		return Username
 	}
-	
-	@FindBy(xpath = "//input[@id='txtPassword']")
-	private WebElement Password
-	
+
+	private WebElement Password = driver.findElement(By.xpath("//input[@id='txtPassword']"))
+
 	public WebElement getPassword() {
-		return Password;
+		return Password
 	}
-	
-	@FindBy(xpath = "//div[@id='pnlLoginAlert']")
-	private WebElement LoginErrorMessage
-	
+
+	private WebElement LoginErrorMessage = driver.findElement(By.xpath("//div[@id='pnlLoginAlert']"))
+
 	public WebElement getLoginErrorMessage() {
-		return LoginErrorMessage;
+		return LoginErrorMessage
 	}
-	
-	@FindBy(xpath = "//input[@id='btnSubmit']")
-	private WebElement LoginButton
-	
+
+	private WebElement LoginButton = driver.findElement(By.xpath("//input[@id='btnSubmit']"))
+
 	public WebElement getLoginButton() {
-		return LoginButton;
+		return LoginButton
 	}
 }
