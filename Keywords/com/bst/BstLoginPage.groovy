@@ -47,11 +47,13 @@ public class BstLoginPage {
 		return Password
 	}
 
+	/*
 	private WebElement LoginErrorMessage = driver.findElement(By.xpath("//div[@id='pnlLoginAlert']"))
 
 	public WebElement getLoginErrorMessage() {
 		return LoginErrorMessage
 	}
+	*/
 
 	private WebElement LoginButton = driver.findElement(By.xpath("//input[@id='btnSubmit']"))
 
